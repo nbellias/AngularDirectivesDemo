@@ -1,0 +1,14 @@
+<h3>Structural Directive Demo</h3>
+<button (click)="toggleVisibility()">Toggle List Visibility</button>
+
+@if(isVisible){
+<div>
+  <ul>
+    @for(item of items; track item){
+    <li>{{ item }}</li>
+    }
+  </ul>
+</div>
+}
+<p></p>
+<p>Back to the  <a routerLink="/attribute-demo">attibute directive demo</a></p>
